@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/tutorials.css">
+</head>
+<body>
+    <header>
+        <div class="headercont">
+            <div class="logocont">
+                <a class = "logo" href = "index.html">
+                    <svg class = "imgsvg">
+                        <use href = "img/sprite.svg#ST_logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="searchcont">
+                <svg class="imgsvg">
+                    <use href = "img/sprite.svg#search"></use>
+                </svg>
+                
+                <form action="">
+                    <input type="text" placeholder="Search" class = "searchpanel">
+                </form>
+            </div>
+            <ul class="hrefcont">
+                <li class = "items">
+                    <a href = "cubemx.html"><img src="img/cubemxlogo.png" alt="cubemx" class = "cubemxlogo"></a>
+                </li>
+                <li class = "items">
+                    <a href="cubeide.html"><img src="img/cubeidelogo.png" alt="cubeide" class="cubeidelogo"></a>
+                </li>
+                <li class = "items">
+                    <a href="cubeprog.html"><img src="img/cubeproglogo.png" alt="cubeprog" class="cubeproglogo"></a>
+                </li>
+                <li class="items">
+                    <a href="shop.html">
+                        <svg class = "imgsvg">
+                            <use href = "img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+    </header>
+    <main>
+
+
+        <div class="title">
+            <h2>CubeMX Tutorials</h2>
+        </div>
+        <div class="container">
+            <nav class = "nav">
+                <ul class = "nav-cont">
+                    <h2>Contents</h2>
+                    <li class = "items"><a href = "#start">Getting started</a></li>
+                    <li class = "items"><a href = "#materials">Materials</a></li>
+                    <li class = "items"><a href = "#software">Software</a></li>
+                    <li class = "items"><a href = "#firstpage">Clock config</a></li>
+                    <li class = "items"><a href = "#videos">Videos</a></li>
+                    <li class="items"><a href="#conclusion">Conclusion</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="cont">
+                <div class="text" id = "start">
+                    With Cube MX you can generate code for your STM32 MCU
+                    and adjust clock speed. Although you can set up power save modes
+                    as fast as clock lines
+                </div>
+                <div class="text" id="materials">
+                    <h2>You need:</h2>
+                    <ul class="ul-cont">
+                        <li class="items">STM32 development board or chip</li>
+                        <li class="items">Computer</li>
+                        <li class="items">CubeMX installed on your computer</li>
+                    </ul>
+                </div>
+                <div class="text" id="software">
+                    <h2>Where you can find software</h2>
+                    <ul class="ul-cont">
+                        <li class="items">Official STM32 site</li>
+                        <li class="items">Torrents (We don't recommend it to use)</li>
+                        <li class="items">Ask someone if he or she has this software pack</li>
+                    </ul>
+                </div>
+                <div class="text" id="firstpage">
+                    <h2>Step-by-step tutorial</h2>
+                    <img src="img/tutorials/firstcubemx.png" alt="cubeMX intro" class="tutorials">
+                    
+                    <img src="img/tutorials/secondcubemx.png" alt="cubeMX intro" class="tutorials">
+                    <img src="img/tutorials/thirdcubemx.png" alt="cubeMX intro" class="tutorials">
+                </div>
+                <div class="text" id="videos">
+                    <iframe class = "video" src="https://www.youtube.com/embed/szMGedsp9jc" title="Getting started with STM32CubeMX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="text" id="conclusion">
+                    <h2>Conclusion</h2>
+                    After that you know how to config Clock Generator
+                    that is not all yet, so watch us on youtube
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            
+            <svg class = "imgsvg">
+                <use href = "img/sprite.svg#ST_logo"></use>
+            </svg>
+            rate us on:
+            <ul class = "ul-cont">
+                <li class = "items"><img src="img/footerimg/github.png" alt="" class="rate"></li>
+                <li class = "items"><img src="img/footerimg/google.png" alt="" class="rate"></li>
+                <li class = "items"><img src="img/footerimg/stackoverflow.png" alt="" class="rate"></li>
+            </ul>   
+        </div>
+    </footer>
+</body>
+</html>
