@@ -1,0 +1,191 @@
+@import 'variables.scss';
+@import 'placeholders.scss';
+@import 'mixins.scss';
+head,*{
+    font-size:$font-size;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h2{
+    font-size:$h2-size;
+    //@extend %font-adjust;
+}
+body{
+    background-color: $bgcolor;
+    font-family: "DM Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+}
+.headercont{
+    background-color: $bgcolor;
+    z-index: 1;
+    width:100%;
+    padding:10px;
+    @extend %flex-center;
+    justify-content: space-between;
+    .logocont{
+        .logo{
+            @extend %flex-center;
+            
+            .imgsvg{
+                //width:100px;
+                color: $bglogocolor;
+                @extend %size-adjust;
+                
+                //transform: scale(0.5);
+                &:hover{
+                    @extend %animation;
+                }
+            }
+        }
+    }
+    .searchcont{
+        @extend %flex-center;
+        padding:10px 10px;
+        .imgsvg{
+            
+            color:$textcolor;
+            width:25px;
+            /*height:25px;*/
+            @extend %imgadjust;
+        }
+        border:$bordercolor solid 3px;
+        border-radius: 25px;
+        .searchpanel{
+            border:none;
+            @extend %size-adjust;
+            @extend %search-adjust;
+        }
+        &:hover{
+            border-color:$href-text-color;
+            @extend %animation;
+            .imgsvg{
+                color:$href-text-color;
+                @extend %animation;
+            }
+        }
+    }
+    .hrefcont{
+        list-style-type: none;
+        @extend %flex-params;
+        justify-content: space-between;
+        @extend %gap-adjust;
+        .cubemxlogo{
+            @extend %imgadjust;
+            &:hover{
+                @extend %animation;
+            }
+        }
+        .cubeidelogo{
+            @extend %imgadjust;
+                &:hover{
+                @extend %animation;
+            }
+        }
+        .cubeproglogo{
+            @extend %imgadjust;
+            &:hover{
+                @extend %animation;
+            }
+        }   
+        .imgsvg{
+            
+            @extend %imgadjust;
+            width:50px;
+            &:hover{
+                @extend %animation;
+            }
+        }
+    }
+}
+.title{
+    @extend %flex-center;
+}
+.container{
+    @extend %flex-params;
+    .nav{
+        
+        display: block;
+        @extend %nav-adjust;
+        padding:10px 10px;
+        
+        ul{ 
+            position: sticky;
+            @extend %nav-adjust;
+        top:10px;
+            li{
+                padding:10px;
+                a{
+                    @extend %size-adjust;
+                    color:$nav-color;
+                    text-decoration-line: none;
+
+                    &:hover{
+                        @extend %animation;
+                        color:$href-text-color;
+                    }
+                }
+                &:hover{
+                    @extend %animation;
+                }
+            }
+        }
+    }
+    .cont{
+        @extend %flex-params;
+        flex-direction: column;
+        justify-content: space-around;
+        //flex-wrap: wrap;
+        
+        gap:40px;
+        .text{
+            @extend %font-adjust;
+        }
+        .ul-cont{
+            margin-left:5%;
+            padding:2%;
+            @extend %font-adjust;
+            .items{
+                padding:3px;
+                @extend %font-adjust;
+            }
+        }
+        
+    }
+}
+.video{
+    width:60%;
+    height: 500px;
+}
+.footer{
+    background-color: $footerbg;
+    @extend %flex-center;
+    padding:10px;
+    color:$shop-text-color;
+    @extend %font-adjust;
+    .imgsvg{
+        color:$bglogocolor;
+        @extend %size-adjust;
+        &:hover{
+            @extend %animation;
+        }
+    }
+
+    .ul-cont{
+        @extend %flex-params;
+        justify-content: space-between;
+        gap:20px;
+        .items{
+            &:hover{
+                @extend %animation;
+            }
+        }
+        
+    }
+    .rate{
+        width:45px;
+        //padding:10px;
+    }
+}

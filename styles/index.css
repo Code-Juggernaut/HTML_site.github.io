@@ -1,0 +1,220 @@
+@media screen and (min-width: 200px) {
+  .headercont .hrefcont .imgsvg, .headercont .hrefcont .cubeproglogo, .headercont .hrefcont .cubeidelogo, .headercont .hrefcont .cubemxlogo, .headercont .searchcont .imgsvg {
+    width: auto;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .headercont .hrefcont .imgsvg, .headercont .hrefcont .cubeproglogo, .headercont .hrefcont .cubeidelogo, .headercont .hrefcont .cubemxlogo, .headercont .searchcont .imgsvg {
+    width: auto;
+    height: 35px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .headercont .hrefcont .imgsvg, .headercont .hrefcont .cubeproglogo, .headercont .hrefcont .cubeidelogo, .headercont .hrefcont .cubemxlogo, .headercont .searchcont .imgsvg {
+    width: auto;
+    height: 55px;
+    display: block;
+  }
+}
+
+.footer .ul-cont, .container .cont, .container, .headercont .hrefcont {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer, .title, .headercont .searchcont, .headercont .logocont .logo, .headercont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 200px) {
+  .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
+    font-size: 15px;
+    width: 50px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
+    font-size: 22px;
+    width: 200px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .footer, .container .cont .ul-cont .items, .container .cont .ul-cont, .container .cont .text {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .footer, .container .cont .ul-cont .items, .container .cont .ul-cont, .container .cont .text {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer, .container .cont .ul-cont .items, .container .cont .ul-cont, .container .cont .text {
+    font-size: 22px;
+  }
+}
+
+.footer .ul-cont .items:hover, .footer .imgsvg:hover, .container .nav ul li:hover, .container .nav ul li a:hover, .headercont .hrefcont .imgsvg:hover, .headercont .hrefcont .cubeproglogo:hover, .headercont .hrefcont .cubeidelogo:hover, .headercont .hrefcont .cubemxlogo:hover, .headercont .searchcont:hover .imgsvg, .headercont .searchcont:hover, .headercont .logocont .logo .imgsvg:hover {
+  color: #ffc400;
+  transform: scale(1.1);
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-width: 200px) {
+  .headercont .searchcont .searchpanel {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headercont .searchcont .searchpanel {
+    display: none;
+  }
+}
+
+.headercont .hrefcont {
+  gap: 40px;
+}
+@media screen and (max-width: 600px) {
+  .headercont .hrefcont {
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .container .nav ul, .container .nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container .nav ul, .container .nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container .nav ul, .container .nav {
+    display: block;
+  }
+}
+
+head, * {
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "DM Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.headercont {
+  background-color: #FFFFFF;
+  z-index: 1;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+}
+.headercont .logocont .logo .imgsvg {
+  color: #058aff;
+}
+.headercont .searchcont {
+  padding: 10px 10px;
+  border: #0049a2 solid 3px;
+  border-radius: 25px;
+}
+.headercont .searchcont .imgsvg {
+  color: #000000;
+  width: 25px;
+  /*height:25px;*/
+}
+.headercont .searchcont .searchpanel {
+  border: none;
+}
+.headercont .searchcont:hover {
+  border-color: #00b8c5;
+}
+.headercont .searchcont:hover .imgsvg {
+  color: #00b8c5;
+}
+.headercont .hrefcont {
+  list-style-type: none;
+  justify-content: space-between;
+}
+.headercont .hrefcont .imgsvg {
+  width: 50px;
+}
+.container .nav {
+  display: block;
+  padding: 10px 10px;
+}
+.container .nav ul {
+  position: sticky;
+  top: 10px;
+}
+.container .nav ul li {
+  padding: 10px;
+}
+.container .nav ul li a {
+  color: #00569c;
+  text-decoration-line: none;
+}
+.container .nav ul li a:hover {
+  color: #00b8c5;
+}
+.container .cont {
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
+}
+.container .cont .ul-cont {
+  margin-left: 5%;
+  padding: 2%;
+}
+.container .cont .ul-cont .items {
+  padding: 3px;
+}
+
+.video {
+  width: 60%;
+  height: 500px;
+}
+
+.footer {
+  background-color: #01a3c8;
+  padding: 10px;
+  color: #FFFFFF;
+}
+.footer .imgsvg {
+  color: #058aff;
+}
+.footer .ul-cont {
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer .rate {
+  width: 45px;
+}/*# sourceMappingURL=index.css.map */

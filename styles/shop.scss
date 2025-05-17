@@ -1,0 +1,61 @@
+@import 'variables.scss';
+@import 'placeholders.scss';
+@import 'mixins.scss';
+.container{
+    @extend %flex-params;
+    flex-direction: column;
+    padding:10px 10px;
+    gap:20px;
+    .logo{
+            @extend %imgadjust;
+        }
+    .title-cont{
+        @extend %flex-params;
+        justify-content: space-between;
+        background-color:$titlebg;
+        color:$shop-text-color;
+        @include borders(transparent,10px);
+        //border-radius:10px;
+        padding: 0px 10px;
+        
+    }
+    //---------------------------------custom colors
+    .title-cont:nth-child(3){
+        background-color:#009b1c;
+        @include borders(transparent,10px);
+    }
+    .title-cont:nth-child(5){
+        background-color:#9b0000;
+        @include borders(transparent,10px);
+    }
+    //--------------------------------custom colors end
+    .cont-item{
+        @extend %flex-params;
+        //flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        //gap:10px;
+        .item{
+            .img{
+                @include media-height(100px,200px,300px);
+                
+            }
+            .price{
+                @extend %flex-params;
+                flex-direction: column;
+                
+                span{
+                    @extend %font-adjust;
+                }
+            }
+            &:hover{
+                transform: scale(1.07);
+                transition: all 1.2s ;
+            }
+        }
+        
+    }
+    .cont-item:nth-child(2){
+        justify-content: space-between;
+    }
+}

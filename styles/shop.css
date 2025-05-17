@@ -1,0 +1,97 @@
+@media screen and (min-width: 200px) {
+  .container .logo {
+    width: auto;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container .logo {
+    width: auto;
+    height: 35px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container .logo {
+    width: auto;
+    height: 55px;
+    display: block;
+  }
+}
+
+.container .cont-item .item .price, .container .cont-item, .container .title-cont, .container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 200px) {
+  .container .cont-item .item .price span {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container .cont-item .item .price span {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container .cont-item .item .price span {
+    font-size: 22px;
+  }
+}
+
+.container {
+  flex-direction: column;
+  padding: 10px 10px;
+  gap: 20px;
+}
+.container .title-cont {
+  justify-content: space-between;
+  background-color: #0099ff;
+  color: #FFFFFF;
+  border: transparent solid 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px 10px;
+}
+.container .title-cont:nth-child(3) {
+  background-color: #009b1c;
+  border: transparent solid 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .title-cont:nth-child(5) {
+  background-color: #9b0000;
+  border: transparent solid 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .cont-item {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 200px) {
+  .container .cont-item .item .img {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container .cont-item .item .img {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container .cont-item .item .img {
+    height: 300px;
+  }
+}
+.container .cont-item .item .price {
+  flex-direction: column;
+}
+.container .cont-item .item:hover {
+  transform: scale(1.07);
+  transition: all 1.2s;
+}
+.container .cont-item:nth-child(2) {
+  justify-content: space-between;
+}/*# sourceMappingURL=shop.css.map */
