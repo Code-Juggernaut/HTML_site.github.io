@@ -11,3 +11,6 @@
     padding:5px;
     @include media-height(200px,300px,800px);
 }
+.warn{
+    color:$warn-color;
+}

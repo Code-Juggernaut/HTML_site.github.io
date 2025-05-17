@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
+    
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/tutorials.css">
 </head>
@@ -51,11 +54,10 @@
         </div>
         <hr>
     </header>
+
     <main>
-
-
         <div class="title">
-            <h2>CubeMX Tutorials</h2>
+            <h2>CubeProgramer Tutorials</h2>
         </div>
         <div class="container">
             <nav class = "nav">
@@ -64,7 +66,7 @@
                     <li class = "items"><a href = "#start">Getting started</a></li>
                     <li class = "items"><a href = "#materials">Materials</a></li>
                     <li class = "items"><a href = "#software">Software</a></li>
-                    <li class = "items"><a href = "#firstpage">Clock config</a></li>
+                    <li class = "items"><a href = "#firstpage">Warning</a></li>
                     <li class = "items"><a href = "#videos">Videos</a></li>
                     <li class="items"><a href="#conclusion">Conclusion</a></li>
                     
@@ -72,16 +74,16 @@
             </nav>
             <div class="cont">
                 <div class="text" id = "start">
-                    With Cube MX you can generate code for your STM32 MCU
-                    and adjust clock speed. Although you can set up power save modes
-                    as fast as clock lines
+                    With Cube Programmer you can program your STM32 MCU and write 
+                    registers as easy as learning C after C++. Although you can adjust security registers
                 </div>
                 <div class="text" id="materials">
                     <h2>You need:</h2>
                     <ul class="ul-cont">
                         <li class="items">STM32 development board or chip</li>
                         <li class="items">Computer</li>
-                        <li class="items">CubeMX installed on your computer</li>
+                        <li class="items">CubeProgramer installed on your computer</li>
+                        <li class="items">Code that you need to program(filename.bin)</li>
                     </ul>
                 </div>
                 <div class="text" id="software">
@@ -93,23 +95,33 @@
                     </ul>
                 </div>
                 <div class="text" id="firstpage">
-                    <h2>Step-by-step tutorial</h2>
-                    <img src="img/tutorials/firstcubemx.png" alt="cubeMX intro" class="tutorials">
+                    <h2 class = "warn">!!!Warning!!!</h2>
+                    <ul class="ul-cont">
+                        <li class="items">Don't write security registers without needs</li>
+                        <li class="items">Don't modify section 0x000000</li>
+                        <li class="items">Be careful when changing register value</li>
+                        <li class="items">Be careful when updating STLink software</li>
+                    </ul>
+                    <!-- <img src="img/tutorials/firstcubemx.png" alt="cubeMX intro" class="tutorials">
                     
                     <img src="img/tutorials/secondcubemx.png" alt="cubeMX intro" class="tutorials">
-                    <img src="img/tutorials/thirdcubemx.png" alt="cubeMX intro" class="tutorials">
+                    <img src="img/tutorials/thirdcubemx.png" alt="cubeMX intro" class="tutorials"> -->
+
                 </div>
                 <div class="text" id="videos">
-                    <iframe class = "video" src="https://www.youtube.com/embed/szMGedsp9jc" title="Getting started with STM32CubeMX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="text" id="conclusion">
+                    <h2>Step-by-step tutorials</h2>
+                    <iframe class = "video" src="https://www.youtube.com/embed/WY1hQzMh6wo" title="Programming STM32 MCUs using STM32CubeProgrammer: Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                    <iframe class = "video" src="https://www.youtube.com/embed/uxaReHFBVRg" title="Programming STM32 MCUs using STM32CubeProgrammer: Part 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class = "video" src="https://www.youtube.com/embed/q0vbKRoLETs" title="Programming STM32 MCUs using STM32CubeProgrammer: Part 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="text" id="conclusion">
                     <h2>Conclusion</h2>
-                    After that you know how to config Clock Generator
-                    that is not all yet, so watch us on youtube
+                    After that you know how to program your MCU.
+                    Don't forget to use docs
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer">
             

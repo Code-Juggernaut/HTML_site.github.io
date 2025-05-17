@@ -28,6 +28,10 @@
         background-color:#9b0000;
         @include borders(transparent,10px);
     }
+    .title-cont:nth-child(7){
+        background-color:#7c009b;
+        @include borders(transparent,10px);
+    }
     //--------------------------------custom colors end
     .cont-item{
         @extend %flex-params;

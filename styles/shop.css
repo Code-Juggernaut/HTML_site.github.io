@@ -66,6 +66,12 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.container .title-cont:nth-child(7) {
+  background-color: #7c009b;
+  border: transparent solid 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .container .cont-item {
   justify-content: space-evenly;
   flex-wrap: wrap;
