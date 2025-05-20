@@ -18,6 +18,13 @@
     display: block;
   }
 }
+@media screen and (min-width: 2000px) {
+  .headercont .hrefcont .imgsvg, .headercont .hrefcont .cubeproglogo, .headercont .hrefcont .cubeidelogo, .headercont .hrefcont .cubemxlogo, .headercont .searchcont .imgsvg {
+    width: auto;
+    height: 100px;
+    display: block;
+  }
+}
 
 .footer .ul-cont, .container .cont, .container, .headercont .hrefcont {
   display: flex;
@@ -53,20 +60,53 @@
     height: 55px;
   }
 }
+@media screen and (min-width: 2000px) {
+  .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
+    font-size: 42px;
+    width: 400px;
+    height: 100px;
+  }
+}
 
 @media screen and (min-width: 200px) {
-  .footer, .container .cont .ul-cont .items, .container .cont .ul-cont, .container .cont .text {
+  head, * {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 700px) {
-  .footer, .container .cont .ul-cont .items, .container .cont .ul-cont, .container .cont .text {
+  head, * {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .footer, .container .cont .ul-cont .items, .container .cont .ul-cont, .container .cont .text {
-    font-size: 22px;
+  head, * {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  head, * {
+    font-size: 52px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 700px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  h2 {
+    font-size: 65px;
   }
 }
 
@@ -113,15 +153,10 @@
 }
 
 head, * {
-  font-size: 20px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-h2 {
-  font-size: 25px;
 }
 
 body {

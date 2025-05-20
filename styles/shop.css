@@ -18,6 +18,13 @@
     display: block;
   }
 }
+@media screen and (min-width: 2000px) {
+  .container .logo {
+    width: auto;
+    height: 100px;
+    display: block;
+  }
+}
 
 .container .cont-item .item .price, .container .cont-item, .container .title-cont, .container {
   display: flex;
@@ -36,7 +43,12 @@
 }
 @media screen and (min-width: 1000px) {
   .container .cont-item .item .price span {
-    font-size: 22px;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .container .cont-item .item .price span {
+    font-size: 52px;
   }
 }
 

@@ -2,14 +2,16 @@
 @import 'placeholders.scss';
 @import 'mixins.scss';
 head,*{
-    font-size:$font-size;
+    //font-size:$font-size;
+    @extend %font-adjust;
     list-style-type: none;
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 h2{
-    font-size:$h2-size;
+    //font-size:$h2-size;
+    @extend %title-adjust;
     //@extend %font-adjust;
 }
 body{
@@ -25,6 +27,7 @@ body{
     padding:10px;
     @extend %flex-center;
     justify-content: space-between;
+    
     .logocont{
         .logo{
             @extend %flex-center;
