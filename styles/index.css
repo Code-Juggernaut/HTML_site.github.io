@@ -50,19 +50,19 @@
   .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
     font-size: 20px;
     width: 100px;
-    height: 35px;
+    height: 30px;
   }
 }
 @media screen and (min-width: 1000px) {
   .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
     font-size: 22px;
     width: 200px;
-    height: 55px;
+    height: 35px;
   }
 }
 @media screen and (min-width: 2000px) {
   .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
-    font-size: 42px;
+    font-size: 52px;
     width: 400px;
     height: 100px;
   }
