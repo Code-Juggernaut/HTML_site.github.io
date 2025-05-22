@@ -60,6 +60,7 @@ body{
             border:none;
             @extend %size-adjust;
             @extend %search-adjust;
+            outline: 0;
         }
         &:hover{
             border-color:$href-text-color;

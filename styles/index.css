@@ -188,6 +188,7 @@ body {
 }
 .headercont .searchcont .searchpanel {
   border: none;
+  outline: 0;
 }
 .headercont .searchcont:hover {
   border-color: #00b8c5;
