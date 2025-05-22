@@ -3,6 +3,11 @@
     border-top-left-radius: $rad;
     border-top-right-radius: $rad;
 }
+@mixin bottom-borders($color,$rad){
+    border:$color solid 3px;
+    border-bottom-left-radius:$rad;
+    border-bottom-right-radius:$rad;
+}
 @mixin media-height($min-height,$mid-height,$max-height){
     @media screen and (min-width: 200px) {
         height:$min-height;

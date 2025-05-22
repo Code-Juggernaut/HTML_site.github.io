@@ -55,7 +55,7 @@
 }
 @media screen and (min-width: 1000px) {
   .footer .imgsvg, .container .nav ul li a, .headercont .searchcont .searchpanel, .headercont .logocont .logo .imgsvg {
-    font-size: 22px;
+    font-size: 25px;
     width: 200px;
     height: 35px;
   }
@@ -239,9 +239,12 @@ body {
 }
 
 .footer {
-  background-color: #01a3c8;
+  background-color: #007893;
   padding: 10px;
   color: #FFFFFF;
+  border: transparent solid 3px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .footer .imgsvg {
   color: #058aff;

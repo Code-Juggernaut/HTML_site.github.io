@@ -168,6 +168,7 @@ body{
     padding:10px;
     color:$shop-text-color;
     @extend %font-adjust;
+    @include bottom-borders(transparent,10px);
     .imgsvg{
         color:$bglogocolor;
         @extend %size-adjust;

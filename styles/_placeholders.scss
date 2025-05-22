@@ -14,7 +14,7 @@
         height:55px;
         display:block;
     }
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 2000px) {
         width:auto;
         height:100px;
         display:block;
@@ -48,12 +48,12 @@
         height: 30px;
     }
     @media screen and (min-width: 1000px) {
-        font-size:22px;
+        font-size:25px;
         width:200px;
         height: 35px;
         
     }
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 2000px) {
         font-size:52px;
         width:400px;
         height: 100px;
@@ -69,7 +69,7 @@
     @media screen and (min-width: 1000px) {
         font-size:25px;
     }
-    @media screen and (min-width: 1500px){
+    @media screen and (min-width: 2000px){
         font-size:52px;
     }
 }
@@ -83,7 +83,7 @@
     @media screen and (min-width: 1000px) {
         font-size:35px;
     }
-    @media screen and (min-width: 1500px){
+    @media screen and (min-width: 2000px){
         font-size:65px;
     }
 }
